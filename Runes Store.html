@@ -15,124 +15,269 @@
 
 		body {
 
-			margin: 0;		
+			margin: 0;
 			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 			font-weight: 300;
-				}
-
-				header {
-
-background-color: aqua;
-overflow: hidden;
-margin: 0;
-
-				}
-ul {
-background-color: #0b0b0b;
-text-align: center;
-height: 3rem;
-margin: auto;
+		}
 
 
-}
+		/* START OF HEADER SECTION */
 
-li {
+		header {
 
-list-style: none;
-display: inline-block;
-margin-right: 2rem;
-position: relative;
-top: 0.75rem;
+			background-color: aqua;
+			overflow: hidden;
+			margin: 0;
+			border-bottom: 1px solid #485460;
 
-	
-}
+		}
 
-li a {
-
-color: #d2dae2;
-text-decoration: none;
-text-transform: uppercase;
-font-size: 19px;
-transition: 0.215s;
+		ul {
+			background-color: #0b0b0b;
+			text-align: center;
+			height: 3rem;
+			margin: auto;
 
 
-}
+		}
 
-li a:hover {
+		li {
 
-color: white;
-font-weight: 400;
-text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
-
-}
-
-.Logo 
-{
-background-image: url(Logo.jpg);
-background-size: 48px;
-background-repeat: no-repeat;
-height: 3000px;
-width: 300px;
-position: absolute;
-float: left;
-cursor: pointer;
-
-}
-
-.Yg {
-
-position: absolute;
-left:55px;
-top: -1.2rem;
-color: #d2dae2;
-text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
-cursor: pointer;
-}
-
-.Yg:hover {
-
-color: white;
-text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
-
-}
-	
-
-.search {
-
-position: absolute;
-height: 2.7rem;
-width: 3rem;
-left: 85%;
-cursor: pointer;
-
-}
-
-.search:hover {
-
-	color: white;
-font-weight: 400;
-text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
-
-}
-
-.search i {
-
-color: #d2dae2;
-top: 0.9rem;
-left: 1.1rem;
-transform: translate(-50,-50%);
-position: relative;
-
-}
+			list-style: none;
+			display: inline-block;
+			margin-right: 2rem;
+			position: relative;
+			top: 0.75rem;
 
 
+		}
 
+		li a {
+
+			color: #d2dae2;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 19px;
+			transition: 0.215s;
+
+
+		}
+
+		li a:hover {
+
+			color: white;
+			font-weight: 400;
+			text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+		}
+
+		.Logo {
+			background-image: url(Logo.jpg);
+			background-size: 48px;
+			background-repeat: no-repeat;
+			height: 3000px;
+			width: 300px;
+			position: absolute;
+			float: left;
+			cursor: pointer;
+
+		}
+
+		.Yg {
+
+			position: absolute;
+			left: 55px;
+			top: -1.2rem;
+			color: #d2dae2;
+			text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
+			cursor: pointer;
+		}
+
+		.Yg:hover {
+
+			color: white;
+			text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+		}
+
+
+		.search {
+
+			position: absolute;
+			height: 2.7rem;
+			width: 3rem;
+			left: 85%;
+			cursor: pointer;
+
+		}
+
+		.search:hover {
+
+			color: white;
+			font-weight: 400;
+			text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+		}
+
+		.search i {
+
+			color: #d2dae2;
+			top: 0.9rem;
+			left: 1.1rem;
+			transform: translate(-50, -50%);
+			position: relative;
+
+		}
+
+		/* END OF HEADER SECTION */
+
+
+
+		/* START OF 1ST SECTION (MYTHOS) SECTION */
 
 		.mythos {
 
-			background-color: red;
+			background-image: url(Back1.jpg);
+			background-size: 120rem 49rem;
+			background-repeat: no-repeat;
+			height: 49rem;
+			width: 100%;
+			position: relative;
+			margin: auto;
+			display: inline-flex;
+			z-index: 2;
+			border-bottom: 2px solid #485460;
+
+
 
 		}
+
+		.myth1 {
+
+			background-image: url(Odin.jpg);
+			background-size: 515px;
+			background-repeat: no-repeat;
+			height: 48rem;
+			width: 31.5rem;
+			text-align: center;
+			right: -23%;
+			position: relative;
+			top: 0.5rem;
+			z-index: 2;
+			border: 0.5px solid #485460;
+			cursor: pointer;
+			transition: 0.8s;
+			border-radius: 10%;
+
+
+		}
+
+
+
+
+
+		.myth2 {
+
+			background-image: url(Zeus.jpg);
+			background-size: 498px;
+			height: 48rem;
+			width: 31.1rem;
+			background-repeat: no-repeat;
+			text-align: center;
+			left: 24%;
+			position: relative;
+			top: 0.5rem;
+			z-index: 2;
+			border: 0.5px solid #485460;
+			cursor: pointer;
+			transition: 0.8s;
+			border-radius: 10%;
+		}
+
+		.myth1:hover,
+		.myth2:hover {
+
+			filter: grayscale(100%);
+			-webkit-box-shadow: 0px 0px 14px 2px #d2dae2;
+			-moz-box-shadow: 0px 0px 14px 2px#d2dae2;
+			box-shadow: 0px 0px 14px 2px #d2dae2;
+
+
+		}
+
+
+
+
+		.cover {
+
+			margin: 0;
+			padding: 0;
+			z-index: 1;
+			height: 100%;
+			width: 100%;
+			background-color: black;
+			opacity: 0.6;
+			position: absolute;
+
+		}
+
+
+
+		.myth1 a {
+
+			color: #d2dae2;
+			text-decoration: none;
+			text-transform: uppercase;
+			;
+			text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
+			cursor: pointer;
+			font-size: 35px;
+			position: relative;
+			top: 22rem;
+			transition: 0.8s;
+
+
+		}
+
+
+		.myth2 a {
+
+			color: #d2dae2;
+			text-decoration: none;
+			text-transform: uppercase;
+			;
+			text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
+			cursor: pointer;
+			font-size: 35px;
+			position: relative;
+			top: 22rem;
+			transition: 0.8s;
+
+
+		}
+
+
+		.myth1 a:hover,
+		.myth2 a:hover {
+
+			color: white;
+			text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+		/* END OF 1ST SECTION (MYTHOS) SECTION */
+
+
 
 		.container2 {
 
@@ -170,7 +315,9 @@ position: relative;
 <body>
 
 	<header>
-		<div class="Logo"><h1 class="Yg">YggR</h1></div>
+		<div class="Logo">
+			<h1 class="Yg">YggR</h1>
+		</div>
 		<div class="search"><i class="fas fa-search"></i></div>
 		<nav>
 			<ul>
@@ -185,12 +332,11 @@ position: relative;
 	</header>
 
 	<section class="mythos">
+		<div class="cover"></div>
 
-		<button class="myth"><a href="Runes Store">Norse Mythology</a></button>
-		<button class="myth"><a href="Runes Store">Greek Mythology</a></button>
-		<button class="myth"><a href="Runes Store">Mayab Mythology</a></button>
-		<button class="myth"><a href="Runes Store">Arabian Mythology</a></button>
-		<button class="myth"><a href="Runes Store">Chineese Mythology</a></button>
+		<button class="myth1"><a href="Runes Store">Norse Mythology</a></button>
+		<button class="myth2"><a href="Runes Store">Greek Mythology</a></button>
+
 
 	</section>
 
