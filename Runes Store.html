@@ -28,7 +28,7 @@ margin: 0;
 
 				}
 ul {
-background-color: blueviolet;
+background-color: #0b0b0b;
 text-align: center;
 height: 3rem;
 margin: auto;
@@ -42,17 +42,86 @@ list-style: none;
 display: inline-block;
 margin-right: 2rem;
 position: relative;
-top: 0.4rem;
+top: 0.75rem;
 
 	
 }
 
 li a {
 
-color: antiquewhite;
+color: #d2dae2;
 text-decoration: none;
 text-transform: uppercase;
-font-size: 30px;
+font-size: 19px;
+transition: 0.215s;
+
+
+}
+
+li a:hover {
+
+color: white;
+font-weight: 400;
+text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+}
+
+.Logo 
+{
+background-image: url(Logo.jpg);
+background-size: 48px;
+background-repeat: no-repeat;
+height: 3000px;
+width: 300px;
+position: absolute;
+float: left;
+cursor: pointer;
+
+}
+
+.Yg {
+
+position: absolute;
+left:55px;
+top: -1.2rem;
+color: #d2dae2;
+text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
+cursor: pointer;
+}
+
+.Yg:hover {
+
+color: white;
+text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+}
+	
+
+.search {
+
+position: absolute;
+height: 2.7rem;
+width: 3rem;
+left: 85%;
+cursor: pointer;
+
+}
+
+.search:hover {
+
+	color: white;
+font-weight: 400;
+text-shadow: 1px 1px 2px #d2dae2, 0 0 25px #d2dae2, 0 0 5px #d2dae2;
+
+}
+
+.search i {
+
+color: #d2dae2;
+top: 0.9rem;
+left: 1.1rem;
+transform: translate(-50,-50%);
+position: relative;
 
 }
 
@@ -101,13 +170,15 @@ font-size: 30px;
 <body>
 
 	<header>
+		<div class="Logo"><h1 class="Yg">YggR</h1></div>
+		<div class="search"><i class="fas fa-search"></i></div>
 		<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Our Mission</a></li>
-				<li class="Logo">LOGO</li>
 				<li><a href="#">Order Now</a></li>
-				<li><a href="#">support</a></li>
+				<li><a href="#">Community</a></li>
+				<li><a href="#">Support</a></li>
 
 			</ul>
 		</nav>
