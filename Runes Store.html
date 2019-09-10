@@ -299,7 +299,15 @@
 			font-size: 20px;
 			top: 2rem;
 			position: relative;
-			text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460
+			text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
+			transition: 0.8s;
+		}
+
+		.Ab:hover {
+			color: white;
+			font-weight: 400;
+			text-shadow: 0.2px 0.2px 0.5px #d2dae2, 0 0 5px #d2dae2, 0 0 1px #d2dae2;
+
 		}
 
 
@@ -310,50 +318,76 @@
 
 			background-color: #1e272e;
 			margin: auto;
-			display:block;
-			height:  152rem;
+			display: block;
+			height: 120rem;
 			width: 100%;
 			
 
-			
+
+
 
 		}
 
 		.features {
 
+			position: relative;
+			top: 1.5rem;
+			text-align: left;
+			color: #d2dae2;
+			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
+			font-size: 24px;
+			/* margin-left: 39rem; */
+			left: 39rem;
+			cursor: pointer;
+			width: 70rem;
+			overflow: hidden;
+			margin-top: auto;
+			/* margin-right: 13rem; */
+			right: 13rem;
+			height: auto;
+			transition: 0.8s;
+		}
+
+
+.features:hover {
+
+	color: white;
+			font-weight: 400;
+			text-shadow: 0.2px 0.2px 0.5px #d2dae2, 0 0 5px #d2dae2, 0 0 1px #d2dae2;
+
+}
+
+
+		.feat {
+
+position: relative;
+top:-1rem;
+text-align: left;
 color: #d2dae2;
-border-bottom: dotted #d2dae2;
-width: 70%;
-position: relative;
-top: 0.2rem;
-text-align:justify;
-left: 20%;
-margin-bottom: 1rem;
-vertical-align: middle;
-font-size: 20px;
-margin-left: 1rem;
-
-
-
-
-
-
-
-		}
-
-
-		.features img {
-
-background-color: #ffffff;
+text-shadow: 1px 1px 2px #485460, 0 0 25px #485460, 0 0 5px #485460;
+/* margin-left: 33rem; */
+left: 33rem;
+cursor: pointer;
+margin-bottom: -1rem;
 width: 5rem;
-height: 5rem;
-position: relative;
-right: 2%;
-top: 2.6rem;
-left: -6rem;
+
+
 
 
 		}
+
+
+		
+
+		.feat img {
+
+			-webkit-filter: invert(.8);
+  filter: invert(.8);
+  cursor: pointer;
+
+
+		}
+
 
 
 		/* END OF 3RD SECTION (RUNES) SECTION */
@@ -410,11 +444,13 @@ left: -6rem;
 	<section>
 		<div class="container2">
 			<div class="Ab">
-				᚛ᚑᚌᚐᚋ᚜). The runes are an ancient alphabet that originated in Germanic and Scandinavian countries. Today, they
+				᚛ᚑᚌᚐᚋ᚜). The runes are an ancient alphabet that originated in Germanic and Scandinavian countries.
+				Today, they
 				are used in magic and divination by many Pagans who follow a Norse or Heathen-based path. Although their
 				meanings can sometimes be a bit obscure, most people who work with runes find that the best way to
 				incorporate them into divination is to ask a specific question based upon your current situation.</div>
-			<div class="Ab"> ᚛ᚑᚌᚐᚋ᚜). Rune stones, (sometimes cards), are used as tools of divination - a way to predict one's
+			<div class="Ab"> ᚛ᚑᚌᚐᚋ᚜). Rune stones, (sometimes cards), are used as tools of divination - a way to predict
+				one's
 				future. Rune Stones come in a set of 24 ancient alphabetic symbols. They can be made of different
 				materials - wood or glass most common and attractive - and usually kept in a pouch or box. They usually
 				come with a book of instructions defining the symbols.
@@ -433,7 +469,8 @@ left: -6rem;
 
 
 				Meanings and interpretations of each rune stone are shown below.</div>
-			<div class="Ab"> ᚛ᚑᚌᚐᚋ᚜). There is some evidence that, in addition to being a writing system, runes historically
+			<div class="Ab"> ᚛ᚑᚌᚐᚋ᚜). There is some evidence that, in addition to being a writing system, runes
+				historically
 				served purposes of .magic. This is the case from earliest epigraphic evidence of the Roman to Germanic
 				Iron Age, with non-linguistic inscriptions and the alu word. An erilaz appears to have been a person
 				versed in runes, including their magic applications.
@@ -463,49 +500,72 @@ left: -6rem;
 
 	<section>
 		<div class="container3">
-			<div class="features"><img src="1.png"> Fehu, “cattle.” Phoneme: F. Meaning: wealth.</img></div>
-			<div class="features"><img src="2.png">Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning:
-				strength of will.</img></div>
-			<div class="features"><img src="3.png">Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard). Meaning:
-				danger, suffering.</img></div>
-			<div class="features"><img src="4.png">Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short). Meaning:
-				prosperity, vitality.</img></div>
-			<div class="features"><img src="5.png">Name: Raidho, “journey on horseback.” Phoneme: R. Meaning: movement,
-				work, growth.</img></div>
-			<div class="features"><img src="6.png">Name: Kaunan, “ulcer.” Phoneme: K. Meaning: mortality, pain.</img>
+			<div class="features">Name: Fehu, “cattle.” Phoneme: F. Meaning: wealth.</div>
+			<div class="feat"><img src="1.png"></img></div>
+			<div class="features">Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning:
+				strength of will.</div>
+			<div class="feat"><img src="2.png"></img></div>
+			<div class="features">Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard). Meaning:
+				danger, suffering.</div class="feat">
+			<div class="feat"><img src="3.png"></img></div>
+			<div class="features">Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short). Meaning:
+				prosperity, vitality.</div>
+			<div class="feat"><img src="4.png"></img></div>
+			<div class="features">Name: Raidho, “journey on horseback.” Phoneme: R. Meaning: movement,
+				work, growth.</div>
+			<div class="feat"><img src="5.png"></img></div>
+			<div class="features">Name: Kaunan, “ulcer.” Phoneme: K. Meaning: mortality, pain.</div>
+			<div class="feat"><img src="6.png"></img>
 			</div>
-			<div class="features"><img src="7.png">Name: Gebo, “gift.” Phoneme: G. Meaning: generosity.</img></div>
-			<div class="features"><img src="8.png">Name: Wunjo, “joy.” Phoneme: W. Meaning: joy, ecstasy.</img></div>
-			<div class="features"><img src="9.png">Name:Hagalaz, “hail.” Phoneme: H. Meaning: destruction, chaos.</img>
+			<div class="features">Name: Gebo, “gift.” Phoneme: G. Meaning: generosity.</div>
+			<div class="feat"><img src="7.png"></img></div>
+			<div class="features">Name: Wunjo, “joy.” Phoneme: W. Meaning: joy, ecstasy.</div>
+			<div class="feat"><img src="8.png"></img></div>
+			<div class="features">Name:Hagalaz, “hail.” Phoneme: H. Meaning: destruction, chaos.</div>
+			<div class="feat"><img src="9.png"></img>
 			</div>
-			<div class="features"><img src="10.png">Name: Naudhiz, “need.” Phoneme: N. Meaning: need, unfulfilled
-				desire.</img></div>
-			<div class="features"><img src="11.png">Name: Isaz, “ice.” Phoneme: I (long and/or short). Meaning: unknown
-				(the rune poems are ambiguous and contradictory).</img></div>
-			<div class="features"><img src="12.png">Name: Jera, “year.” Phoneme: Germanic J, modern English Y. Meaning:
-				harvest, reward.</img></div>
-			<div class="features"><img src="13.png">Name: Eihwaz, “yew.” Phoneme: I pronounced like “Eye.” Meaning:
-				strength, stability.</img></div>
-			<div class="features"><img src="14.png">Name: unknown. Phoneme: P. Meaning: unknown. (Note: the theory that
+			<div class="features">Name: Naudhiz, “need.” Phoneme: N. Meaning: need, unfulfilled
+				desire.</div>
+			<div class="feat"><img src="10.png"></img></div>
+			<div class="features">Name: Isaz, “ice.” Phoneme: I (long and/or short). Meaning: unknown
+				(the rune poems are ambiguous and contradictory).</div>
+			<div class="feat"><img src="11.png"></img></div>
+			<div class="features">Name: Jera, “year.” Phoneme: Germanic J, modern English Y. Meaning:
+				harvest, reward.</div>
+			<div class="feat"><img src="12.png"></img></div>
+			<div class="features">Name: Eihwaz, “yew.” Phoneme: I pronounced like “Eye.” Meaning:
+				strength, stability.</div>
+			<div class="feat"><img src="13.png"></img></div>
+			<div class="features">Name: unknown. Phoneme: P. Meaning: unknown. (Note: the theory that
 				this rune’s name was “Pertho” is just speculation. No one really knows, because the Viking Age and
-				medieval sources are too vague.)</img></div>
-			<div class="features"><img src="15.png">Name: unknown (the rune poems are contradictory). Phoneme: Z.
-				Meaning: protection from enemies, defense of that which one loves.</img></div>
-			<div class="features"><img src="16.png">Name: Sowilo, “sun.” Phoneme: S. Meaning: success, solace.</img>
+				medieval sources are too vague.)</div>
+			<div class="feat"><img src="14.png"></img></div>
+			<div class="features">Name: unknown (the rune poems are contradictory). Phoneme: Z.
+				Meaning: protection from enemies, defense of that which one loves.</div>
+			<div class="feat"><img src="15.png"></img></div>
+			<div class="features">Name: Sowilo, “sun.” Phoneme: S. Meaning: success, solace.</div>
+			<div class="feat"><img src="16.png"></img>
 			</div>
-			<div class="features"><img src="18.png">Name: Berkanan, “birch.” Phoneme: B. Meaning: fertility, growth,
-				sustenance.</img></div>
-			<div class="features"><img src="19.png">Name: Ehwaz, “horse.” Phoneme: E (long and/or short). Meaning:
-				trust, faith, companionship.</img></div>
-			<div class="features"><img src="20.png">Name: Mannaz, “man.” Phoneme: M. Meaning: augmentation,
-				support.</img></div>
-			<div class="features"><img src="21.png">Name: Laguz. Phoneme: L. Meaning: formlessness, chaos, potentiality,
-				the unknown.</img></div>
-			<div class="features"><img src="22.png">Name: Ingwaz, “the god Ingwaz.” Phoneme: Ng. Meaning: fertilization,
-				the beginning of something, the actualization of potential.</img></div>
-			<div class="features"><img src="23.png">Name: Othalan, “inheritance.” Phoneme: O (long and/or short).
-				Meaning: inheritance, heritage, tradition, nobility.</img></div>
-			<div class="features"><img src="24.png">Name: Dagaz, “day.” Phoneme: D. Meaning: hope, happiness.</img>
+			<div class="features">Name: Berkanan, “birch.” Phoneme: B. Meaning: fertility, growth,
+				sustenance.</div>
+			<div class="feat"><img src="18.png"></img></div>
+			<div class="features">Name: Ehwaz, “horse.” Phoneme: E (long and/or short). Meaning:
+				trust, faith, companionship.</div>
+			<div class="feat"><img src="19.png"></img></div>
+			<div class="features">Name: Mannaz, “man.” Phoneme: M. Meaning: augmentation,
+				support.</div>
+			<div class="feat"><img src="20.png"></img></div>
+			<div class="features">Name: Laguz. Phoneme: L. Meaning: formlessness, chaos, potentiality,
+				the unknown.</div>
+			<div class="feat"><img src="21.png"></img></div>
+			<div class="features">Name: Ingwaz, “the god Ingwaz.” Phoneme: Ng. Meaning: fertilization,
+				the beginning of something, the actualization of potential.</div>
+			<div class="feat"><img src="22.png"></img></div>
+			<div class="features">Name: Othalan, “inheritance.” Phoneme: O (long and/or short).
+				Meaning: inheritance, heritage, tradition, nobility.</div>
+			<div class="feat"><img src="23.png"></img></div>
+			<div class="features">Name: Dagaz, “day.” Phoneme: D. Meaning: hope, happiness.</div>
+			<div class="feat"><img src="24.png"></img>
 			</div>
 		</div>
 	</section>
