@@ -458,6 +458,7 @@
 			top: 1rem;
 			transition: 0.7s;
 			cursor: pointer;
+			outline: none;
 
 
 		}
@@ -476,10 +477,11 @@
 		.container5 {
 
 			background-color: black;
-			height: 15rem;
+			height: 10rem;
 			display: flex;
 			margin: 0;
 			width: 100%;
+			overflow: hidden;
 
 
 
@@ -494,7 +496,7 @@
 			text-align: center;
 			position: relative;
 			margin: auto;
-			top: -4rem;
+			top: -2em;
 			cursor: pointer;
 			left: 4rem;
 
@@ -524,7 +526,7 @@
 			left: -65rem;
 			border: transparent;
 			font-size: 20px;
-			top: 6rem;
+			top: 3.5em;
 
 
 
@@ -534,8 +536,8 @@
 		.In {
 
 			position: relative;
-			left:-41rem;
-			top: 3rem;
+			left: -41rem;
+			top: 1.6em;
 			color: #d2dae2;
 			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
 			background-color: #121a21;
@@ -559,17 +561,155 @@
 
 		}
 
-
-
-
-
 		/* END OF FOOTER SECTION */
+		/* START OF MODAL SECTION */
+
+		#GDPR {
+
+			overflow: hidden;
+			height: 3rem;
+			width: 100%;
+			margin: auto;
+			position: sticky;
+			display:flex;
+			bottom: 0;
+			width: 100%;
+			z-index: 3;
+			
+
+		}
+
+
+		#GDPRB {
+
+			
+			color: #d2dae2;
+			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
+			font-size: 15px;
+			position: relative;
+			background-color: #121a21;
+			width:100%;
+			text-align: center;
+			margin: -1.5rem auto;
+
+			
+
+
+		}
+
+
+		#GDPRB a {
+
+			text-decoration: none;
+			margin-left: 2rem;
+			margin-right: -3rem;
+			color: #d2dae2;
+			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
+			transition: 0.9s;
+			
+		
+
+		}
+
+
+		#GDPRB a:hover {
+
+			color: white;
+			text-shadow: .1px 0.1px .5px #d2dae2, 0 0 6px #d2dae2, 0 0 1px #d2dae2;
+
+		}
+
+		#Accept {
+
+			background-color: #121a21;
+			color: #d2dae2;
+			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
+			text-transform: uppercase;
+			font-size: 23px;
+			border: transparent;
+			transition: 0.7s;
+			cursor: pointer;
+			outline: none;
+			height: 4rem;
+			width: 15rem;
+			transition: 0.7s;
+			margin-left: 5rem;
+
+		}
+
+		#Decline {
+
+			background-color: #121a21;
+			color: #d2dae2;
+			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
+			text-transform: uppercase;
+			font-size: 23px;
+			border: transparent;
+			transition: 0.7s;
+			cursor: pointer;
+			outline: none;
+			height: 4rem;
+			width: 15rem;
+			transition: 0.7s;
+			margin-left: 2rem;
+
+		}
+
+		#Accept:hover, #Decline:hover {
+
+			filter: grayscale(100%);
+			-webkit-box-shadow: 0px 0px 14px 2px #d2dae2;
+			-moz-box-shadow: 0px 0px 14px 2px#d2dae2;
+			box-shadow: 0px 0px 14px 2px #d2dae2;
+
+		}
+
+
+		/* END OF MODAL SECTION */
 	</style>
 
 
 	<!-- write your javascript in the script tag -->
 	<script>
 		// this is a javascript comment
+
+// // GET GDPR ELEMENT
+// var GDPR = document.getElementsByid('GDPR');
+// // GET GDPRB ELEMENT
+// var GDPRB = document.getElementsByid('GDPRB');
+// // GET ACCEPT ELEMENT
+// var Accept = document.getElementsByid('Accept');
+// // GET DECLINE ELEMENT
+// var Decline = document.getElementsByid('Decline');
+
+
+// //LISTEN FOR CLOSE CLICK
+// Accept.addEventListener('click',closeGDPR);
+// //LISTEN FOR CLOSE CLICK
+// Accept.addEventListener('click',closeGDPRB);
+// //LISTEN FOR OPEN CLICK GDPR (NOT READY YET)
+// Decline.addEventListener('click',openGDPRC);
+
+
+// //FUNCTION TO CLOSE GDPR
+// function closeGDPR(){GDPR.style.display='none';}
+// //FUNCTION TO CLOSE GDPRB
+// function closeGDPRB(){GDPRB.style.display='none';}
+
+
+function Accept() {var x= document.getElementById('GDPR')};
+if (x.style.display === "none") {
+	x.style.display = "block";
+} else {
+
+x.style.display = "none";
+
+}
+
+
+
+
+
 
 	</script>
 </head>
@@ -778,6 +918,19 @@
 					class="In">Subscribe</button>
 			</div>
 	</footer>
+
+
+
+	<section id="GDPR">
+		<div id="GDPRB">
+			<h1> This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn More</a><button id="Accept" onclick="Accept()">Accept</button><button id="Decline" onclick="Decline()">Decline</button></h1>
+			
+		</div>
+
+
+
+	</section>
+
 
 </body>
 
