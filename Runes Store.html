@@ -575,6 +575,7 @@
 			bottom: 0;
 			width: 100%;
 			z-index: 3;
+			border-top: solid 1px #485460;
 			
 
 		}
@@ -591,6 +592,7 @@
 			width:100%;
 			text-align: center;
 			margin: -1.5rem auto;
+			
 
 			
 
@@ -606,6 +608,7 @@
 			color: #d2dae2;
 			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
 			transition: 0.9s;
+			
 			
 		
 
@@ -634,6 +637,7 @@
 			width: 15rem;
 			transition: 0.7s;
 			margin-left: 5rem;
+			text-decoration: none;
 
 		}
 
@@ -652,9 +656,21 @@
 			width: 15rem;
 			transition: 0.7s;
 			margin-left: 2rem;
+			text-align: center;
+		
+		}
+
+		#Decline a {
+
+position: relative;
+left: -2.4rem;
+
+
+
 
 		}
 
+	
 		#Accept:hover, #Decline:hover {
 
 			filter: grayscale(100%);
@@ -673,46 +689,10 @@
 	<script>
 		// this is a javascript comment
 
-// // GET GDPR ELEMENT
-// var GDPR = document.getElementsByid('GDPR');
-// // GET GDPRB ELEMENT
-// var GDPRB = document.getElementsByid('GDPRB');
-// // GET ACCEPT ELEMENT
-// var Accept = document.getElementsByid('Accept');
-// // GET DECLINE ELEMENT
-// var Decline = document.getElementsByid('Decline');
-
-
-// //LISTEN FOR CLOSE CLICK
-// Accept.addEventListener('click',closeGDPR);
-// //LISTEN FOR CLOSE CLICK
-// Accept.addEventListener('click',closeGDPRB);
-// //LISTEN FOR OPEN CLICK GDPR (NOT READY YET)
-// Decline.addEventListener('click',openGDPRC);
-
-
-// //FUNCTION TO CLOSE GDPR
-// function closeGDPR(){GDPR.style.display='none';}
-// //FUNCTION TO CLOSE GDPRB
-// function closeGDPRB(){GDPRB.style.display='none';}
-
-
-function Accept()
-{
-	var x= document.getElementById('Accept')
-	if (x.style.display === "none")
-	{
-	
-		x.style.display = "none";
-	}
-	 else
-	{
-		x.style.display = "none";
-	}
+function Accept(){
+	var GDPR = document.getElementById ('GDPR').style.display = "none";
+	;
 }
-
-
-
 
 
 
@@ -928,7 +908,7 @@ function Accept()
 
 	<section id="GDPR">
 		<div id="GDPRB">
-			<h1> This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn More</a><button id="Accept" onclick="Accept()">Accept</button><button id="Decline" onclick="Decline()">Decline</button></h1>
+			<h1> This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn More</a><button id="Accept" onclick="Accept()">Accept</button><button id="Decline" onclick="Decline()"><a href="DeclineCoockies.html">Decline</a></button></h1>
 			
 		</div>
 
