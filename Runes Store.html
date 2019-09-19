@@ -313,7 +313,7 @@
 		/* END OF 2ND SECTION (ABOUT) SECTION */
 		/* START OF 3RD SECTION (RUNES) SECTION */
 
-		.container3 {
+		#container3 {
 
 			background-color: #1e272e;
 			margin: auto;
@@ -386,6 +386,46 @@
 			filter: invert(.8);
 			cursor: pointer;
 
+
+		}
+
+		#Fehu1 {
+
+			display: none;
+			width: 65em;
+			height: 30rem;
+			background: #485460;
+			margin: -1rem auto;
+			position: absolute;
+			left: -2rem;
+			z-index: 1;
+			-moz-box-shadow: inset 0 0 10px #1e272e;
+			-webkit-box-shadow: inset 0 0 10px #1e272e;
+			box-shadow: inset 0 0 10px #1e272e;
+			text-align: center;
+			top:1rem;
+
+		}
+
+		#Fehu12 {
+
+position: relative;
+left: 48%;
+top: -2.5rem;
+background-color: transparent;
+border: transparent;
+font-size: 25px;
+color:#d2dae2;
+cursor: pointer;
+transition: 0.7s;
+outline: none;
+		}
+
+		#Fehu12:hover {
+
+			color: white;
+			font-weight: 400;
+			text-shadow: 0.2px 0.2px 0.5px #d2dae2, 0 0 5px #d2dae2, 0 0 1px #d2dae2;
 
 		}
 
@@ -527,6 +567,7 @@
 			border: transparent;
 			font-size: 20px;
 			top: 3.5em;
+			outline: none;
 
 
 
@@ -549,6 +590,7 @@
 			font-size: 15px;
 			text-transform: uppercase;
 			transition: 0.7s;
+			outline: none;
 		}
 
 
@@ -571,30 +613,30 @@
 			width: 100%;
 			margin: auto;
 			position: sticky;
-			display:flex;
+			display: flex;
 			bottom: 0;
 			width: 100%;
 			z-index: 3;
 			border-top: solid 1px #485460;
-			
+
 
 		}
 
 
 		#GDPRB {
 
-			
+
 			color: #d2dae2;
 			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
 			font-size: 15px;
 			position: relative;
 			background-color: #121a21;
-			width:100%;
+			width: 100%;
 			text-align: center;
 			margin: -1.5rem auto;
-			
 
-			
+
+
 
 
 		}
@@ -608,9 +650,9 @@
 			color: #d2dae2;
 			text-shadow: 0.5px 0.5px 1px #485460, 0 0 12.5px #485460, 0 0 2.5px #485460;
 			transition: 0.9s;
-			
-			
-		
+
+
+
 
 		}
 
@@ -657,21 +699,22 @@
 			transition: 0.7s;
 			margin-left: 2rem;
 			text-align: center;
-		
+
 		}
 
 		#Decline a {
 
-position: relative;
-left: -2.4rem;
+			position: relative;
+			left: -2.4rem;
 
 
 
 
 		}
 
-	
-		#Accept:hover, #Decline:hover {
+
+		#Accept:hover,
+		#Decline:hover {
 
 			filter: grayscale(100%);
 			-webkit-box-shadow: 0px 0px 14px 2px #d2dae2;
@@ -689,10 +732,43 @@ left: -2.4rem;
 	<script>
 		// this is a javascript comment
 
-function Accept(){
-	var GDPR = document.getElementById ('GDPR').style.display = "none";
-	;
-}
+		function Accept() {
+			var GDPR = document.getElementById('GDPR').style.display = "none";
+
+		}
+		// FEHU SCRIPTS //
+		function Fehu() {
+			var Fehu1 = document.getElementById('Fehu1').style.display = "block";
+		}
+
+		function Fehu12() {
+			var Fehu1 = document.getElementById('Fehu1').style.display = "none";
+		}
+
+
+// URUZ //
+// THURISAZ //
+// ANSUZ //
+// RAIDHO //
+// KAUNAN //
+// GEBO //
+// WUNJO //
+// HAGALAZ //
+// NAUDHIZ //
+// ISAZ //
+// JERA //
+// EIHWAZ //
+// UNKNOWN1 //
+// UNKNOWN2 //
+// SOWILO //
+// BERKANAN //
+// EHWAZ //
+// MANNAZ //
+// LAGUZ //
+// INGWAZ //
+// OTHALAN //
+// DAGAZ//
+
 
 
 
@@ -785,75 +861,89 @@ function Accept(){
 
 
 	<section>
-		<div class="container3">
-			<div class="features">Name: Fehu, “cattle.” Phoneme: F. Meaning: wealth.</div>
-			<div class="feat"><img src="1.png"></img></div>
-			<div class="features">Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning:
+		<div id="container3">
+			<div class="features" onclick="Fehu()">Name: Fehu, “cattle.” Phoneme: F. Meaning: wealth.</div>
+			<div class="feat"><img src="1.png">
+				<div id="Fehu1">
+					<p>Hello</p>
+					<button id="Fehu12" onclick="Fehu12()">X</button>
+				</div></img>
+			</div>
+			<div class="features" onclick="Uruz()">Name: Uruz, “aurochs.” Phoneme: U (long and/or short). Meaning:
 				strength of will.</div>
 			<div class="feat"><img src="2.png"></img></div>
-			<div class="features">Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard). Meaning:
+			<div class="features" onclick="Thurisaz()">Name: Thurisaz, “Giant.” Phoneme: Th (both soft and hard).
+				Meaning:
 				danger, suffering.</div class="feat">
 			<div class="feat"><img src="3.png"></img></div>
-			<div class="features">Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short). Meaning:
+			<div class="features" onclick="Ansuz()">Name: Ansuz, “an Aesir god.” Phoneme: A (long and/or short).
+				Meaning:
 				prosperity, vitality.</div>
 			<div class="feat"><img src="4.png"></img></div>
-			<div class="features">Name: Raidho, “journey on horseback.” Phoneme: R. Meaning: movement,
+			<div class="features" onclick="Raidho()">Name: Raidho, “journey on horseback.” Phoneme: R. Meaning:
+				movement,
 				work, growth.</div>
 			<div class="feat"><img src="5.png"></img></div>
-			<div class="features">Name: Kaunan, “ulcer.” Phoneme: K. Meaning: mortality, pain.</div>
+			<div class="features" onclick="Kaunan()">Name: Kaunan, “ulcer.” Phoneme: K. Meaning: mortality, pain.</div>
 			<div class="feat"><img src="6.png"></img>
 			</div>
-			<div class="features">Name: Gebo, “gift.” Phoneme: G. Meaning: generosity.</div>
+			<div class="features" onclick="Gebo()">Name: Gebo, “gift.” Phoneme: G. Meaning: generosity.</div>
 			<div class="feat"><img src="7.png"></img></div>
-			<div class="features">Name: Wunjo, “joy.” Phoneme: W. Meaning: joy, ecstasy.</div>
+			<div class="features" onclick="Wunjo()">Name: Wunjo, “joy.” Phoneme: W. Meaning: joy, ecstasy.</div>
 			<div class="feat"><img src="8.png"></img></div>
-			<div class="features">Name:Hagalaz, “hail.” Phoneme: H. Meaning: destruction, chaos.</div>
+			<div class="features" onclick="Hagalaz()">Name:Hagalaz, “hail.” Phoneme: H. Meaning: destruction, chaos.
+			</div>
 			<div class="feat"><img src="9.png"></img>
 			</div>
-			<div class="features">Name: Naudhiz, “need.” Phoneme: N. Meaning: need, unfulfilled
+			<div class="features" onclick="Naudhiz()">Name: Naudhiz, “need.” Phoneme: N. Meaning: need, unfulfilled
 				desire.</div>
 			<div class="feat"><img src="10.png"></img></div>
-			<div class="features">Name: Isaz, “ice.” Phoneme: I (long and/or short). Meaning: unknown
+			<div class="features" onclick="Isaz()">Name: Isaz, “ice.” Phoneme: I (long and/or short). Meaning: unknown
 				(the rune poems are ambiguous and contradictory).</div>
 			<div class="feat"><img src="11.png"></img></div>
-			<div class="features">Name: Jera, “year.” Phoneme: Germanic J, modern English Y. Meaning:
+			<div class="features" onclick="Jera()">Name: Jera, “year.” Phoneme: Germanic J, modern English Y. Meaning:
 				harvest, reward.</div>
 			<div class="feat"><img src="12.png"></img></div>
-			<div class="features">Name: Eihwaz, “yew.” Phoneme: I pronounced like “Eye.” Meaning:
+			<div class="features" onclick="Eihwaz()">Name: Eihwaz, “yew.” Phoneme: I pronounced like “Eye.” Meaning:
 				strength, stability.</div>
 			<div class="feat"><img src="13.png"></img></div>
-			<div class="features">Name: unknown. Phoneme: P. Meaning: unknown. (Note: the theory that
+			<div class="features" onclick="Unknown()">Name: unknown. Phoneme: P. Meaning: unknown. (Note: the theory
+				that
 				this rune’s name was “Pertho” is just speculation. No one really knows, because the Viking Age and
 				medieval sources are too vague.)</div>
 			<div class="feat"><img src="14.png"></img></div>
-			<div class="features">Name: unknown (the rune poems are contradictory). Phoneme: Z.
+			<div class="features" onclick="Unknown1()">Name: unknown (the rune poems are contradictory). Phoneme: Z.
 				Meaning: protection from enemies, defense of that which one loves.</div>
 			<div class="feat"><img src="15.png"></img></div>
-			<div class="features">Name: Sowilo, “sun.” Phoneme: S. Meaning: success, solace.</div>
+			<div class="features" onclick="Sowilo()">Name: Sowilo, “sun.” Phoneme: S. Meaning: success, solace.</div>
 			<div class="feat"><img src="16.png"></img>
 			</div>
-			<div class="features">Name: Berkanan, “birch.” Phoneme: B. Meaning: fertility, growth,
+			<div class="features" onclick="Berkanan()">Name: Berkanan, “birch.” Phoneme: B. Meaning: fertility, growth,
 				sustenance.</div>
 			<div class="feat"><img src="18.png"></img></div>
-			<div class="features">Name: Ehwaz, “horse.” Phoneme: E (long and/or short). Meaning:
+			<div class="features" onclick="Ehwaz()">Name: Ehwaz, “horse.” Phoneme: E (long and/or short). Meaning:
 				trust, faith, companionship.</div>
 			<div class="feat"><img src="19.png"></img></div>
-			<div class="features">Name: Mannaz, “man.” Phoneme: M. Meaning: augmentation,
+			<div class="features" onclick="Mannaz()">Name: Mannaz, “man.” Phoneme: M. Meaning: augmentation,
 				support.</div>
 			<div class="feat"><img src="20.png"></img></div>
-			<div class="features">Name: Laguz. Phoneme: L. Meaning: formlessness, chaos, potentiality,
+			<div class="features" onclick="Laguz()">Name: Laguz. Phoneme: L. Meaning: formlessness, chaos, potentiality,
 				the unknown.</div>
 			<div class="feat"><img src="21.png"></img></div>
-			<div class="features">Name: Ingwaz, “the god Ingwaz.” Phoneme: Ng. Meaning: fertilization,
+			<div class="features" onclick="Ingwaz()">Name: Ingwaz, “the god Ingwaz.” Phoneme: Ng. Meaning:
+				fertilization,
 				the beginning of something, the actualization of potential.</div>
 			<div class="feat"><img src="22.png"></img></div>
-			<div class="features">Name: Othalan, “inheritance.” Phoneme: O (long and/or short).
+			<div class="features" onclick="Othalan()">Name: Othalan, “inheritance.” Phoneme: O (long and/or short).
 				Meaning: inheritance, heritage, tradition, nobility.</div>
 			<div class="feat"><img src="23.png"></img></div>
-			<div class="features">Name: Dagaz, “day.” Phoneme: D. Meaning: hope, happiness.</div>
+			<div class="features" onclick="Dagaz()">Name: Dagaz, “day.” Phoneme: D. Meaning: hope, happiness.</div>
 			<div class="feat"><img src="24.png"></img>
 			</div>
 		</div>
+
+
+
 	</section>
 
 	<section>
@@ -908,8 +998,10 @@ function Accept(){
 
 	<section id="GDPR">
 		<div id="GDPRB">
-			<h1> This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn More</a><button id="Accept" onclick="Accept()">Accept</button><button id="Decline" onclick="Decline()"><a href="DeclineCoockies.html">Decline</a></button></h1>
-			
+			<h1> This website uses cookies to ensure you get the best experience on our website. <a href="#">Learn
+					More</a><button id="Accept" onclick="Accept()">Accept</button><button id="Decline"
+					onclick="Decline()"><a href="DeclineCoockies.html">Decline</a></button></h1>
+
 		</div>
 
 
